@@ -6,7 +6,7 @@ function Projects() {
     projects: [
       {
         image: ecom1,
-        description: "This is a responsive ecommerce web application built with React.js and styled using Tailwind CSS. The goal of the project is to create a modern, fast, and mobile-friendly shopping experience that showcases dynamic product listings, smooth navigation, and a clean UI.",
+        description: "This is a responsive ecommerce web application, ecommerce web application,The goal of the project is to create a modern, fast, and mobile-friendly shopping experience that smooth navigation, and a clean UI.",
         link: "https://github.com/Gokul-24-2001/creditcard",
       },
       {
@@ -18,7 +18,7 @@ function Projects() {
   };
   return (
     <section
-      className="flex flex-col py-5 px-5 justify-center text-white bg-primary"
+      className="flex flex-col py-2 px-5 justify-center text-white bg-primary"
       id="project"
     >
       <div className="w-full">
@@ -38,14 +38,14 @@ function Projects() {
       </div>
       
         <div className="w-full">
-        <div className="d-md-flex gap-2 px-5 py-4">
+        <div className="d-sm-flex gap-3 px-5 mb-5">
           
         { config.projects.map((project,index)=>{
-          return <div className="image1 image-hov" key={index}>
+          return <div className="image1 image-hov py-2" key={index}>
             <img src={project.image} className="project-image" />
-            <div className="position-absolute overlay">
-              <p className="d-flex flex-wrap">{project.description}</p>
-              <div className="d-flex justify-content-center mb-3"><a target="_blank"className="btn text-white"href={project.link}>view project</a></div> 
+            <div className="position-absolute overlay rounded">
+              <p className="px-5 py-3">{project.description}</p>
+              <div className=" d-flex justify-content-center mb-3"><a target="_blank"className="button text-white"href={project.link}>view project</a></div> 
             </div>
  
           </div>})}
