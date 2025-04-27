@@ -6,7 +6,7 @@ function Projects() {
     projects: [
       {
         image: ecom1,
-        description: "This is a responsive ecommerce web application, ecommerce web application,The goal of the project is to create a modern, fast, and mobile-friendly shopping experience that smooth navigation, and a clean UI.",
+        description: "This is a responsive ecommerce that smooth navigation, and a clean UI.",
         link: "https://github.com/Gokul-24-2001/creditcard",
       },
       {
@@ -38,13 +38,13 @@ function Projects() {
       </div>
       
         <div className="w-full">
-        <div className="d-sm-flex gap-3 px-5 mb-5">
+        <div className="d-sm-flex gap-3 px-md-5 mb-5">
           
         { config.projects.map((project,index)=>{
-          return <div className="image1 image-hov py-2" key={index}>
+          return <div className="image1 image-hov py-2 px-3" key={index}>
             <img src={project.image} className="project-image" />
             <div className="position-absolute overlay rounded">
-              <p className="px-5 py-3">{project.description}</p>
+              <p className="px-2 py-3">{project.description}</p>
               <div className=" d-flex justify-content-center mb-3"><a target="_blank"className="button text-white"href={project.link}>view project</a></div> 
             </div>
  
