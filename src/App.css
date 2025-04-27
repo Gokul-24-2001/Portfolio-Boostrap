@@ -1,0 +1,57 @@
+ nav ul li a{
+    color:white;
+    text-decoration:none;
+ }
+.menu-items{
+   display: block;
+   text-align: center;
+   background-color: rgb(30, 23, 23);
+}
+.menu-items li{
+  padding: 5px 0px;
+  border-bottom: 3px solid white;
+}
+.icons{
+   color: black;
+}
+.icons:hover{
+   color: white;
+}
+.bgsecondary{
+   background-color: rgb(25, 5, 104);
+ }
+ .about{
+ max-width:150px;
+   border-bottom: 3px solid white;
+ }
+ .project-image{
+   height: 200px;
+   width: 200px;
+ }
+ .overlay{
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   opacity: 0; 
+ }
+ .image1{
+   position: relative;
+ }
+ .project-image:hover .overlay{
+    opacity: 1;
+    cursor: pointer;
+    background-color: #4a4ad8;
+
+
+     }
+     .button{
+      color:white;
+      text-decoration: none;
+      background-color: rgb(92, 92, 233);
+      padding: 15px 10px;
+
+     }
+    
