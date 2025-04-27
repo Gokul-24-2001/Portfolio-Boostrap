@@ -27,6 +27,7 @@
  .project-image{
    height: 200px;
    width: 200px;
+  
  }
  .overlay{
    top: 0;
@@ -36,15 +37,20 @@
    height: 100%;
    width: 100%;
    opacity: 0; 
+   background: rgb(24, 10, 10);
  }
  .image1{
    position: relative;
  }
- .project-image:hover .overlay{
-    opacity: 1;
-    cursor: pointer;
-    background-color: #4a4ad8;
-
+ .contact{
+  max-width:210px;
+  border-bottom: 3px solid white;
+ }
+ 
+ .image-hov:hover .overlay{
+  
+    border: 1px solid red;
+opacity: 1;
 
      }
      .button{
@@ -54,4 +60,8 @@
       padding: 15px 10px;
 
      }
-    
+    .button:hover{
+      box-shadow: rgb(25, 5, 104);
+      padding: 17px 17px;
+      transition: .3s;
+    }

@@ -6,11 +6,11 @@ function Contact() {
         phone:"+91 9677371868"
     } 
   return (
-   <section className='flex flex-col px-5 py-32 bg-primary' id="contact">
+   <section className='d-md-flex justify-content-center px-5 py-32 bg-primary' id="contact">
    
-    <div className='flex  flex-col items-center text-white'>
+    <div className='d-md-flex flex-column align-items-center text-white'>
       
-        <h1 className='text-4xl border-b-2 w-[260px] border-secondary mb-5 font-bold'>Contact Details</h1> 
+        <h1 className='fs-2 font-bold contact'>Contact Details</h1> 
         
        <p className='pb-2'> If you want to discuss more detail, please contact me</p>
        <p className='py-2'><span className='font-bold px-1'>Email:</span>{config.email}</p>

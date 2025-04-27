@@ -6,7 +6,7 @@ function Projects() {
     projects: [
       {
         image: ecom1,
-        description: "THis is my ecommerece1",
+        description: "This is a responsive ecommerce web application built with React.js and styled using Tailwind CSS. The goal of the project is to create a modern, fast, and mobile-friendly shopping experience that showcases dynamic product listings, smooth navigation, and a clean UI.",
         link: "https://github.com/Gokul-24-2001/creditcard",
       },
       {
@@ -38,16 +38,16 @@ function Projects() {
       </div>
       
         <div className="w-full">
-        <div className="d-md-flex px-5 py-4">
+        <div className="d-md-flex gap-2 px-5 py-4">
           
         { config.projects.map((project,index)=>{
-          return <div className="image1" key={index}>
+          return <div className="image1 image-hov" key={index}>
             <img src={project.image} className="project-image" />
             <div className="position-absolute overlay">
-              <p className="text-center px-5 py-5">{project.description}</p>
-              <div className="d-flex justify-content-center"><a target="_blank"className="btn"href={project.link}>view project</a></div> 
+              <p className="d-flex flex-wrap">{project.description}</p>
+              <div className="d-flex justify-content-center mb-3"><a target="_blank"className="btn text-white"href={project.link}>view project</a></div> 
             </div>
-
+ 
           </div>})}
         </div>
       </div>
