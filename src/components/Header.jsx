@@ -5,13 +5,12 @@ import { useState } from "react";
 export default function Header() {
   const [togglemenu, setToggleMenu] = useState(false);
   return (
-    <header className=" d-md-flex justify-content-between px-5 py-2 bg-primary">
+    <section className="d-md-flex justify-content-between px-5 py-2 bg-primary">
       <a className="font-bold text-black text-decoration-none" href="#">
         Gokul R
       </a>
       <nav className="d-md-flex d-none">
         <ul className="d-flex gap-4 list-unstyled ">
-          
           <li>
             <a href="/">Home</a>
           </li>
@@ -30,8 +29,11 @@ export default function Header() {
         </ul>
       </nav>
       {togglemenu && (
-        <nav className="d-md-none">
-          <ul onClick={()=>setToggleMenu(!togglemenu)}className="menu-items list-unstyled w-100">
+        <nav className="d-md-none position-fixed top-25 start-0 w-100 vh-100 bg-whte z-3">
+          <ul
+            onClick={() => setToggleMenu(!togglemenu)}
+            className="menu-items list-unstyled w-100"
+          >
             <li>
               <a href="/">Home</a>
             </li>
@@ -42,8 +44,8 @@ export default function Header() {
               <a href="#project">Projects</a>
             </li>
             <li>
-            <a href="#resume">Resume</a>
-          </li>
+              <a href="#resume">Resume</a>
+            </li>
             <li>
               <a href="#contact">contact</a>
             </li>
@@ -56,9 +58,13 @@ export default function Header() {
       > 
       
       </button> */}
-      <button onClick={() => setToggleMenu(!togglemenu)}
- type="button" className="btn d-md-none position-fixed top-0 end-0 m-1 btn-outline-none"><IoMenuOutline className="fs-2"/></button>
-  
-    </header>
+      <button
+        onClick={() => setToggleMenu(!togglemenu)}
+        type="button"
+        className="btn d-md-none position-fixed top-0 end-0 m-1 btn-outline-none"
+      >
+        <IoMenuOutline className="fs-2" />
+      </button>
+    </section>
   );
 }
